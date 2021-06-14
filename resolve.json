@@ -1,0 +1,27 @@
+[
+    {
+        "name": "waf-tools",
+        "resolver": "git",
+        "method": "semver",
+        "major": 4,
+        "sources": ["github.com/steinwurf/waf-tools.git"]
+    },
+    {
+        "name": "gtest",
+        "resolver": "git",
+        "method": "semver",
+        "major": 4,
+        "sources": [
+            "github.com/steinwurf/gtest.git"
+        ]
+    },
+    {
+        "name": "gbenchmark-source",
+        "resolver": "git",
+        "method": "checkout",
+        "checkout": "v1.5.5",
+        "sources": [
+            "github.com/google/benchmark.git"
+        ]
+    }
+]

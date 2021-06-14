@@ -1,0 +1,9 @@
+#! /usr/bin/env python
+# encoding: utf-8
+
+bld.program(
+    features="cxx test",
+    source=["gbenchmark_tests.cpp"] + bld.path.ant_glob("src/*.cpp"),
+    target="gbenchmark_tests",
+    use=["gtest", "gbenchmark"],
+)
