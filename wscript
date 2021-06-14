@@ -28,7 +28,7 @@ def build(bld):
 
     bld.stlib(
         features="cxx",
-        source=[src.find_resource("src/benchmark_main.cc")],
+        source=src.ant_glob("src/*.cc"),
         target="gbenchmark",
         includes=[includes, src],
         export_includes=[includes],
