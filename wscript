@@ -12,6 +12,10 @@ def configure(conf):
             # If we have not looked for pthread yet
             conf.check_cxx(lib="pthread")
 
+    if conf.is_mkspec_platform("windows"):
+        if not conf.env["LIB_SHLWAPI"]:
+            # If we have not looked for shlwapi yet
+            conf.check_cxx(lib="shlwapi")
 
 def build(bld):
 
@@ -22,6 +26,9 @@ def build(bld):
     use_flags = []
     if bld.is_mkspec_platform("linux"):
         use_flags += ["PTHREAD"]
+
+    if bld.is_mkspec_platform("windows"):
+        use_flags += ["LIB_SHLWAPI"]
 
     src = bld.dependency_node("gbenchmark-source")
     includes = src.find_dir("include")
