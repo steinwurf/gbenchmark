@@ -15,7 +15,7 @@ def configure(conf):
     if conf.is_mkspec_platform("windows"):
         if not conf.env["LIB_SHLWAPI"]:
             # If we have not looked for shlwapi yet
-            conf.check_cxx(lib="shlwapi")
+            conf.check_cxx(lib="shlwapi", use="LIB_SHLWAPI")
     print(conf.env)
 
 def build(bld):
