@@ -55,7 +55,7 @@ jobs:
       - name: Waf Build
         run: |
           echo "::add-matcher::.github/gcc-problem-matcher.json"
-          python3 waf
+          python3 waf -v
       - name: Waf Test
         run: python3 waf --run_tests
   # Build performed on runner using make specs
