@@ -28,7 +28,7 @@ def build(bld):
         use_flags += ["PTHREAD"]
 
     if bld.is_mkspec_platform("windows"):
-        use_flags += ["LIB_SHLWAPI"]
+        use_flags += ["SHLWAPI"]
 
     src = bld.dependency_node("gbenchmark-source")
     includes = src.find_dir("include")
