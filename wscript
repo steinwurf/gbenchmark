@@ -19,10 +19,6 @@ def configure(conf):
 
 def build(bld):
 
-    bld.env.append_unique(
-        "DEFINES_STEINWURF_VERSION", 'STEINWURF_GBENCHMARK_VERSION="{}"'.format(VERSION)
-    )
-
     use_flags = []
     if bld.is_mkspec_platform("linux"):
         use_flags += ["PTHREAD"]
@@ -37,7 +33,7 @@ def build(bld):
         features="cxx",
         source=src.ant_glob("src/*.cc"),
         target="gbenchmark",
-        includes=[includes, src],
+        includes=[includes],
         export_includes=[includes],
         use=use_flags,
     )
