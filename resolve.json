@@ -3,14 +3,16 @@
         "name": "waf-tools",
         "resolver": "git",
         "method": "semver",
-        "major": 4,
-        "sources": ["github.com/steinwurf/waf-tools.git"]
+        "major": 5,
+        "sources": [
+            "github.com/steinwurf/waf-tools.git"
+        ]
     },
     {
         "name": "gtest",
         "resolver": "git",
         "method": "semver",
-        "major": 4,
+        "major": 5,
         "sources": [
             "github.com/steinwurf/gtest.git"
         ]

@@ -6,7 +6,6 @@ VERSION = "1.0.1"
 
 
 def configure(conf):
-
     if conf.is_mkspec_platform("linux"):
         if not conf.env["LIB_PTHREAD"]:
             # If we have not looked for pthread yet
@@ -17,8 +16,10 @@ def configure(conf):
             # If we have not looked for shlwapi yet
             conf.check_cxx(lib="shlwapi")
 
-def build(bld):
+    conf.set_cxx_std(11)
 
+
+def build(bld):
     use_flags = []
     if bld.is_mkspec_platform("linux"):
         use_flags += ["PTHREAD"]
@@ -39,5 +40,4 @@ def build(bld):
     )
 
     if bld.is_toplevel():
-
         bld.recurse("test")
