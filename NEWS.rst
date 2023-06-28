@@ -6,6 +6,10 @@ every change, see the Git log.
 
 Latest
 ------
+* tbd
+
+2.1.0
+-----
 * Minor: Updated Google Benchmark to version v1.8.0.
 
 2.0.0
