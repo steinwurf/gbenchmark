@@ -21,7 +21,7 @@
         "name": "gbenchmark-source",
         "resolver": "git",
         "method": "checkout",
-        "checkout": "v1.5.5",
+        "checkout": "v1.8.0",
         "sources": [
             "github.com/google/benchmark.git"
         ]

@@ -8,6 +8,10 @@ Latest
 ------
 * Patch: Added missing define for Windows.
 
+2.1.0
+-----
+* Minor: Updated Google Benchmark to version v1.8.0.
+
 2.0.0
 -----
 * Major: Use waf-tools 5.
