@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 APPNAME = "gbenchmark"
-VERSION = "2.1.0"
+VERSION = "2.1.1"
 
 
 def configure(conf):

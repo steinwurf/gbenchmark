@@ -6,6 +6,10 @@ every change, see the Git log.
 
 Latest
 ------
+* tbd
+
+2.1.1
+-----
 * Patch: Added missing define for Windows.
 
 2.1.0
