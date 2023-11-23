@@ -37,7 +37,8 @@ def build(bld):
         includes=[includes],
         export_includes=[includes],
         use=use_flags,
-        defines=["benchmark_EXPORTS"],
+        defines=["benchmark_EXPORTS", "BENCHMARK_STATIC_DEFINE"],
+        export_defines=["benchmark_EXPORTS", "BENCHMARK_STATIC_DEFINE"],
     )
 
     if bld.is_toplevel():
