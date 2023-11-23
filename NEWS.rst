@@ -6,6 +6,10 @@ every change, see the Git log.
 
 Latest
 ------
+* tbd
+
+2.1.2
+-----
 * Patch: Fix issue with Windows build.
 
 2.1.1
